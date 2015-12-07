@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <page.actionBar>
+    <action-bar title="NativeScript Test">
+      <action-bar.actionItems>
+        <action-item text="Camera" tap="camera" ios.position="right" />
+      </action-bar.actionItems>
+    </action-bar>
+  </page.actionBar>
+  <GridLayout>
+    <ListView items="{{ images }}">
+      <ListView.itemTemplate>
+        <Image src="{{ src }}" />
+      </ListView.itemTemplate>
+    </ListView>
+  </GridLayout>
+</Page>
